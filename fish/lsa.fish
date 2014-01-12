@@ -1,3 +1,3 @@
 function lsa -d "Compact directory contents for humans"
-  ls -a $argv
+  ls -SA --group-directories-first $argv
 end
