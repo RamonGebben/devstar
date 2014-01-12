@@ -1,3 +1,5 @@
+<img src="http://ra-ge.net/img/cocky-logo.png">
+
 #Cocky
 
 #Cocky Ubuntu 64bits 12.04
