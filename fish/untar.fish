@@ -4,6 +4,15 @@ function untar -a name destination -d "Extract tar.gz or tar.bz or zip archive"
       for fn in *.tar.gz
         untar $fn
       end
+      for fn in *.tgz
+        untar $fn
+      end
+      for fn in *.tar.bz2
+        untar $fn
+      end
+      for fn in *.zip
+        untar $fn
+      end
     case '*'
       switch "$destination"
         case ""       
