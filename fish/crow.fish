@@ -1,14 +1,20 @@
-function crow -a prio -d "Crow a nicely formatted message"
+function crow -a prio msg -d "Crow a nicely formatted message"
   switch "$prio"
     case success 
       set_color green
-      echo "⊕ $argv[2..-1]"
+      echo "⊕ $msg"
+    case detail
+      set_color 555
+      echo "# $msg"
+    case warn
+      set_color yellow
+      echo "! $msg"
     case notice
       set_color cyan
-      echo "• $argv[2..-1]" 
+      echo "• $msg" 
     case error
       set_color red
-      echo "⊗ $argv[2..-1]"
+      echo "⊗ $msg"
   end  
   set_color normal
 

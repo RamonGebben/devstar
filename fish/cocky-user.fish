@@ -20,6 +20,14 @@ function cocky-user -a name -d "Adds a user to this system"
       sudo chmod 700 "/home/$name/.byobu"
       sudo chmod 700 "/home/$name/.byobu/.tmux.conf"
 
+      crow notice "Hooking up rvm config"
+      sudo groupadd -f rvm
+      sudo usermod -a -G rvm $name
+
+      crow notice "Hooking up diakonos config"
+      sudo mkdir -p "/home/$name/.diakonos"
+      sudo cp  /cocky/config/diakonos.conf "/home/$name/.diakonos/diakonos.conf"
+
       crow success "User $name succesfully added"
 
   end

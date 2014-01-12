@@ -9,4 +9,6 @@ function fish_greeting
   cd /cocky/sites
   du -sh * | sed "s/^/  /"
   cocky-help
+  cocky-env
+  cocky-feed latest
 end
