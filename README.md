@@ -158,8 +158,9 @@ The rest of all the configurations will be done with fish script. If you have cl
 
     /cocky/fish/
     
-You can just execute to following functions.
+You can just execute to following function.
+
+    cocky-install-core
 
 
-
-These functions are also the update functions.
+This function is also the update function.
