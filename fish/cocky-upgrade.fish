@@ -4,6 +4,7 @@ function cocky-upgrade -d "Brings core tools and configuration up to date"
   mkdir -p /cocky/tools
   mkdir -p /cocky/logs
   mkdir -p /cocky/sites
+  mkdir -p /cocky/source
 
   crow notice "Pull most recent changes from remote git"
   git pull
