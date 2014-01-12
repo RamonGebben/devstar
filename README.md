@@ -1,8 +1,5 @@
-<img src="http://ra-ge.net/img/cocky-logo.png">
-
-#Cocky
-
-#Cocky Ubuntu 64bits 12.04
+ 
+#Cocky <img src="http://ra-ge.net/img/cocky-logo.png">
 
 ### What is Cocky?
 Cocky is an highly opinionated server configuration for all round web development. It lays focus on usability, shell scripting and workflow optimisation. 
