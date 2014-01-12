@@ -11,4 +11,7 @@ function cocky-upgrade
   # install default toolset
   sudo apt-get -y install htop build-essential zip figlet toilet 
 
+  # update autocompletions for fish
+  fish_update_completions 
+
 end
