@@ -1,4 +1,4 @@
-function cocky-upgrade
+function cocky-upgrade -d "Brings core tools and configuration up to date" 
 
   # verify default folders
   mkdir -p /cocky/tools
