@@ -1,3 +1,19 @@
-function untar -d "Extract tar.gz archive"
-  tar -xzvf
+function untar -a name destination -d "Extract tar.gz or tar.bz or zip archive"
+  switch "$name"
+    case ""
+      for fn in *.tar.gz
+        untar $fn
+      end
+    case '*'
+      switch "$destination"
+        case ""       
+          set hname ($name  | sed 's/\.[^\.]*$//g'  | sed 's/\.[^\.]*$//g'
+          mkdir -p $hname
+          tar --preserve-permissions --preserve-order --overwrite --directory $hname -xvf "$name"           
+        case '*'      
+          mkdir -p $destination
+          tar --preserve-permissions --preserve-order --overwrite --directory $destination -xvf "$name"  
+        end
+      end
+  end
 end
