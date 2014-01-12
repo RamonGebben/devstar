@@ -155,4 +155,12 @@ Because byobu's default configuration it doesn't allow the sublime color setting
 Because the workarround is a bit tricky we made it into a fish function.
 Check fish functions for more info on this.
 
-> Furter in progress
+The rest of all the configurations will be done with fish script. If you have cloned the git and added the fish functions to 
+
+    /cocky/fish/
+    
+You can just execute to following functions.
+
+
+
+These functions are also the update functions.
