@@ -52,5 +52,6 @@ function cocky-shortcuts -d "Show important keyboard shortcuts"
   showkey "Rename         " F8 "  "
 
   echo
+  echo
 
 end
