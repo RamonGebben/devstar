@@ -7,7 +7,10 @@ function cocky-user -a name -d "Adds a user to this system"
       sudo adduser $name
       sudo usermod -g cocky ramon      
       sudo mkdir "/home/$name/.byobu"
+      sudo touch "/home/$name/.byobu/.tmux.conf"
+      sudo chmod 777 "/home/$name/.byobu"
       echo "source /cocky/config/byobu" > "/home/$name/.byobu/.tmux.conf" 
       sudo chown -R $name:cocky "/home/$name/.byobu"
+      sudo chmod 700 "/home/$name/.byobu"
   end
 end
