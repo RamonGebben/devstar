@@ -1,3 +1,3 @@
 function lash -d "List directory contents for humans"
-  ls -lash $argv
+  ls -lah $argv
 end
