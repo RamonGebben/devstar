@@ -1,6 +1,0 @@
-function cocky-install-php -d "Install PHP, MySQL and phpMyAdmin"
-  
-  sudo apt-get -y install php5-fpm
-  
-
-end
