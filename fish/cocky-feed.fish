@@ -1,11 +1,15 @@
 function cocky-feed -a view -d "Display the comments throughout the tree"
-  
-  function showc 
-    set_color green  
-    crow notice $argv[1] | sed 's/\.[^.]*$//' | sed 's/\/cocky\///g' | sed 's/\/$//g'
+
+  function showb
     for i in ( cat -s $argv[1] )
       crow detail $i
     end
+  end
+  
+  function showc 
+    set_color green  
+    crow notice $argv[1] | sed 's/\.[^.]*$//' | sed 's/\/cocky\///g' | sed 's/\/$//g' | sed '/^$/d'
+    showb $argv[1]
   end
 
   switch "$view"
@@ -23,6 +27,10 @@ function cocky-feed -a view -d "Display the comments throughout the tree"
       for c in (ls -1 /cocky/**/.comment)[1..3]
         showc $c
       end    
+    case 'here'
+      if test -e ".comment"
+        showb (echo -s (pwd) "/.comment")
+      end       
     case '*'
       for c in (ls -1 -t /cocky/**/.comment)        
         showc $c

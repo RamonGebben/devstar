@@ -22,8 +22,10 @@ function fish_prompt
   set_color -b normal 222
   echo -n -s (date +%b ) " " (date +%d)
 
-  set_color -b normal yellow
   echo ""
+  cocky-feed here
+
+  set_color -b normal yellow
   echo -n '» '
   set_color normal
 

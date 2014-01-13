@@ -4,6 +4,7 @@ function comment -a input -d "Edit or add comments to folder"
    case ""
     editor .comment
    case "*" 
-    echo "$input" >> .comment
+    echo -n -s (whoami) >> .comment
+    echo -s ": $input" >> .comment
   end
 end
