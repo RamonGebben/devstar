@@ -23,19 +23,24 @@ apt-add-repository -y ppa:fish-shell/release-2   # fish
 apt-get update
 
 # install it all at once
-apt-get -y install mosh byobu fish git
+apt-get -y install mosh byobu fish git toilet
 
+# set default group
+usermod -g devstar root
 addgroup devstar
 echo "%devstar   ALL=(ALL:ALL) NOPASSWD:ALL" > /etc/sudoers.d/devstar
 chmod 0440 /etc/sudoers.d/devstar
 
 # checkout devstar
 mkdir -p /devstar
+mkdir -p /devstar/sites
 cd /devstar
 git clone https://github.com/RamonGebben/cocky.git .
 
 # fix ownership
-chown -R root:devstar /devstar 
+#chown -R root:devstar /devstar 
+
+# link fish functions
 ln -s /devstar/fish /etc/fish/functions
 
 # fix default umask
