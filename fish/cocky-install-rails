@@ -1,3 +1,0 @@
-function cocky-install-rails
-  sudo gem install rails
-end
