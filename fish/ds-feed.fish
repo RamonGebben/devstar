@@ -1,4 +1,4 @@
-function devstar-feed -a view -d "Display the comments throughout the tree"
+function ds-feed -a view -d "Display the comments throughout the tree"
 
   function showb
     for i in ( cat -s $argv[1] )

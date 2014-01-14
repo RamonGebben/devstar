@@ -1,4 +1,4 @@
-function devstar-install-diakonos -d "Install the diakonos text editor"
+function ds-install-diakonos -d "Install the diakonos text editor"
   crow notice "Installing depencency 'curses' as gem"
   sudo gem install curses
   mkdir -p /devstar/source/diakonos  

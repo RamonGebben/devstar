@@ -1,4 +1,4 @@
-function devstar-upgrade -d "Brings core tools and configuration up to date" 
+function ds-upgrade -d "Brings core tools and configuration up to date" 
 
   crow notice "Ensuring tools, logs & sites folder"
   mkdir -p /devstar/tools
@@ -16,6 +16,6 @@ function devstar-upgrade -d "Brings core tools and configuration up to date"
   crow notice "Update fish auto-completitions"
   fish_update_completions 
 
-  crow success "Finished devstar-upgrade proccess"
+  crow success "Finished ds-upgrade proccess"
 
 end

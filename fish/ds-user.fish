@@ -1,7 +1,7 @@
-function devstar-user -a name -d "Adds a user to this system"
+function ds-user -a name -d "Adds a user to this system"
   switch "$name"
     case ''
-      crow error "Usage: devstar-user <username>"
+      crow error "Usage: ds-user <username>"
     case '*'      
 
       crow notice "Adding user to system"

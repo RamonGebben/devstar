@@ -1,4 +1,4 @@
-function devstar-install-wiki -d "Fetch wiki-docs from github"
+function ds-install-wiki -d "Fetch wiki-docs from github"
    crow notice "Setting up wiki folder at /devstar/wiki"
    mkdir -p /devstar/wiki
    cd /devstar/wiki

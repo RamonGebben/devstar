@@ -1,4 +1,4 @@
-function devstar-help -d "Show important keyboard shortcuts & wiki topics"
+function ds-help -d "Show important keyboard shortcuts & wiki topics"
 
   function showkey 
     set_color  444

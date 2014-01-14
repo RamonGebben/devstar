@@ -5,8 +5,8 @@ function fish_greeting
     echo 
     cd /devstar/sites  
     du -sh * | sed "s/^/  /"
-    devstar-help
-    devstar-env
+    ds-help
+    ds-env
   end
   clear
   echo 

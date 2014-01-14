@@ -1,4 +1,4 @@
-function devstar-swap -a act -d "Turn temporary swapfile on"
+function ds-swap -a act -d "Turn temporary swapfile on"
   switch "$act"
     case "on"
       sudo dd if=/dev/zero of=/swap bs=1M count=1024

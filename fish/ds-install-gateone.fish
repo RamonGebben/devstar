@@ -1,4 +1,4 @@
-function devstar-install-gateone -d "Installs gateone web-terminal"
+function ds-install-gateone -d "Installs gateone web-terminal"
    rm /devstar/source/GateOne -R
    crow notice "Installing python pip support" 
    sudo apt-get -y install python-pip

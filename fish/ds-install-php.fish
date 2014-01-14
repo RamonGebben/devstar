@@ -1,4 +1,4 @@
-function devstar-install-php -d "Install PHP, MySQL and phpMyAdmin"
+function ds-install-php -d "Install PHP, MySQL and phpMyAdmin"
   
   crow notice "Installing php5 (FPM)"
   sudo apt-get -y install php5-fpm php5
