@@ -17,6 +17,14 @@ function crow -a prio msg -d "Crow a nicely formatted message"
       echo "⊗ $msg"
   end  
   set_color normal
+  if test -e /usr/bin/notify-send 
+    switch "$prio"
+      case success 
+        notify-send "$msg"
+      case error
+        notify-send "$msg"        
+    end    
+  end
 
 end
 
