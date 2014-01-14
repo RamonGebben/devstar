@@ -33,9 +33,9 @@ chmod 0440 /etc/sudoers.d/devstar
 
 # checkout devstar
 mkdir -p /devstar
-mkdir -p /devstar/sites
 cd /devstar
 git clone https://github.com/RamonGebben/cocky.git .
+mkdir -p /devstar/sites
 
 # fix ownership
 #chown -R root:devstar /devstar 
