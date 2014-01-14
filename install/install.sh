@@ -30,8 +30,8 @@ echo "%devstar   ALL=(ALL:ALL) NOPASSWD:ALL" > /etc/sudoers.d/devstar
 chmod 0440 /etc/sudoers.d/devstar
 
 # checkout devstar
-mkdir /devstar
-cd devstar
+mkdir -p /devstar
+cd /devstar
 git clone https://github.com/RamonGebben/cocky.git .
 
 # fix ownership
@@ -42,4 +42,4 @@ ln -s /devstar/fish /etc/fish/functions
 sed -i 's/UMASK\s*022/UMASK 002/g' /etc/login.defs
 
 echo "If no errors, please reboot now!"
-reboot
+#reboot
