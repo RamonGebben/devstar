@@ -34,7 +34,7 @@ chmod 0440 /etc/sudoers.d/devstar
 # checkout devstar
 mkdir -p /devstar
 cd /devstar
-git clone https://github.com/RamonGebben/cocky.git .
+git clone https://github.com/RamonGebben/devstar.git .
 mkdir -p /devstar/sites
 mkdir -p /devstar/flags
 
