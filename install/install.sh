@@ -1,6 +1,5 @@
 #!/bin/sh 
 
-# spek en bonen
 # fix locale error messages with apt
 echo "LANG=\"en_US.UTF-8\"" > /etc/default/locale
 echo "LANGUAGE=\"en_US.UTF-8\"" >> /etc/default/locale
