@@ -3,10 +3,10 @@ function fish_greeting
     echo 
     df -h -x tmpfs -x devtmpfs | sed "s/^/  /"
     echo 
-    cd /cocky/sites  
+    cd /devstar/sites  
     du -sh * | sed "s/^/  /"
-    cocky-help
-    cocky-env
+    devstar-help
+    devstar-env
   end
   clear
   echo 

@@ -7,13 +7,13 @@ function new-site-emberjs -a name -d "Generate new EmberJS site"
 
    crow notice "Generating files"
 
-   cp /cocky/templates/emberjs/index.html /cocky/sites/$name/public
-   cp -r /cocky/templates/emberjs/js/* /cocky/sites/$name/public/js
-   cp /cocky/templates/css/reset.css /cocky/sites/$name/public/css
-   cp /cocky/templates/css/style.css /cocky/sites/$name/public/css
+   cp /devstar/templates/emberjs/index.html /devstar/sites/$name/public
+   cp -r /devstar/templates/emberjs/js/* /devstar/sites/$name/public/js
+   cp /devstar/templates/css/reset.css /devstar/sites/$name/public/css
+   cp /devstar/templates/css/style.css /devstar/sites/$name/public/css
 
   crow notice "Going into the sites directory"
-  cd /cocky/sites/$name
+  cd /devstar/sites/$name
   
   crow success "Site ready"
   

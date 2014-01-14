@@ -1,10 +1,10 @@
 function new-site-rails
 
- cd /cocky/sites
+ cd /devstar/sites
  mkdir $argv[1]
  cd $argv[1]
  rails new . -B
- cp /cocky/config/gemfile ./Gemfile
+ cp /devstar/config/gemfile ./Gemfile
 
 # rails new . -B -d mysql
 
@@ -52,7 +52,7 @@ function new-site-rails
  echo "server {" >> config/nginx.conf
  echo " listen 80;" >> config/nginx.conf
  echo -s " server_name " $argv[1] "." (hostname) ";" >> config/nginx.conf
- echo -s " root /cocky/sites/" $argv[1] "/public;" >> config/nginx.conf
+ echo -s " root /devstar/sites/" $argv[1] "/public;" >> config/nginx.conf
  echo " passenger_enabled on;" >> config/nginx.conf
  echo " rack_env development;" >> config/nginx.conf
  echo "}" >> config/nginx.conf

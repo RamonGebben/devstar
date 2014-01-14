@@ -23,7 +23,7 @@ function fish_prompt
   echo -n -s (date +%b ) " " (date +%d)
 
   echo ""
-  cocky-feed here
+  devstar-feed here
 
   set_color -b normal yellow
   echo -n '» '

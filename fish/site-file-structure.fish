@@ -6,14 +6,14 @@ function site-file-structure -a name -d "Generates file default file structure"
 
   crow notice "Setting up file structure"
   
-  mkdir -p /cocky/sites/$name/db
-  mkdir -p /cocky/sites/$name/log
-  mkdir -p /cocky/sites/$name/config
-  mkdir -p /cocky/sites/$name/public
-  mkdir -p /cocky/sites/$name/public/js  
-  mkdir -p /cocky/sites/$name/public/css
-  mkdir -p /cocky/sites/$name/public/inc
-  mkdir -p /cocky/sites/$name/public/img  
+  mkdir -p /devstar/sites/$name/db
+  mkdir -p /devstar/sites/$name/log
+  mkdir -p /devstar/sites/$name/config
+  mkdir -p /devstar/sites/$name/public
+  mkdir -p /devstar/sites/$name/public/js  
+  mkdir -p /devstar/sites/$name/public/css
+  mkdir -p /devstar/sites/$name/public/inc
+  mkdir -p /devstar/sites/$name/public/img  
 
  end
 end
