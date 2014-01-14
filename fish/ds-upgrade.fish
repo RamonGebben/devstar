@@ -1,5 +1,8 @@
 function ds-upgrade -d "Brings core tools and configuration up to date" 
 
+  mkdir -p /devstar/flags
+  touch /devstar/flags/first-upgrade
+
   crow notice "Ensuring tools, logs & sites folder"
   mkdir -p /devstar/tools
   mkdir -p /devstar/logs

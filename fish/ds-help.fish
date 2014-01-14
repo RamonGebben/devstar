@@ -56,4 +56,17 @@ function ds-help -d "Show important keyboard shortcuts & wiki topics"
 
   wiki
 
+  if test -e "/devstar/flags/first-user" 
+  else
+    set_color -b 222 d91161
+    echo -s "First-usage"
+    echo 
+    if test -e "/devstar/flags/first-upgrade" 
+      crow notice "Perform initial upgrade: ds-upgrade"
+    else
+      crow notice "Create a first user: ds-user <login>"
+    end    
+    
+  end
+
 end

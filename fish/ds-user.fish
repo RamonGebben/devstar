@@ -29,6 +29,8 @@ function ds-user -a name -d "Adds a user to this system"
       sudo cp  /devstar/config/diakonos.conf "/home/$name/.diakonos/diakonos.conf"
 
       crow success "User $name succesfully added"
+      mkdir -p /devstar/flags
+      touch /devstar/flags/first-user
 
   end
 end

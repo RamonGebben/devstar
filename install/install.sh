@@ -36,9 +36,11 @@ mkdir -p /devstar
 cd /devstar
 git clone https://github.com/RamonGebben/cocky.git .
 mkdir -p /devstar/sites
+mkdir -p /devstar/flags
 
 # fix ownership
-#chown -R root:devstar /devstar 
+chown -R root:devstar /devstar 
+chown -R root:devstar /devstar
 
 # link fish functions
 ln -s /devstar/fish /etc/fish/functions
@@ -46,5 +48,6 @@ ln -s /devstar/fish /etc/fish/functions
 # fix default umask
 sed -i 's/UMASK\s*022/UMASK 002/g' /etc/login.defs
 
-echo "If no errors, please reboot now!"
+echo "***************************"
+echo "REBOOT and run ds-update"
 #reboot
