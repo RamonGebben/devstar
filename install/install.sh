@@ -30,7 +30,7 @@ echo "%devstar   ALL=(ALL:ALL) NOPASSWD:ALL" > /etc/sudoers.d/devstar
 chmod 0440 /etc/sudoers.d/devstar
 
 # checkout devstar
-mkdir devstar
+mkdir /devstar
 cd devstar
 git clone https://github.com/RamonGebben/cocky.git .
 
