@@ -10,7 +10,7 @@ function new-site-php -a name -d "Makes new PHP site"
 
     cp /devstar/templates/php/index.php /devstar/sites/$name/public
     cp /devstar/templates/php/header.php /devstar/sites/$name/public/inc
-    cp /devstar/templates/css/noralize.css /devstar/sites/$name/public/css
+    cp /devstar/templates/css/normalize.css /devstar/sites/$name/public/css
     cp /devstar/templates/css/style.css /devstar/sites/$name/public/css
 
     crow notice "Setting up initial nginx configuration"
