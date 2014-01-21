@@ -26,8 +26,8 @@ apt-get update
 apt-get -y install mosh byobu fish git toilet
 
 # set default group
-usermod -g devstar root
 addgroup devstar
+usermod -g devstar root
 echo "%devstar   ALL=(ALL:ALL) NOPASSWD:ALL" > /etc/sudoers.d/devstar
 chmod 0440 /etc/sudoers.d/devstar
 
