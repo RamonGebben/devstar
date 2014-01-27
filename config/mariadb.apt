@@ -1,0 +1,3 @@
+Package: *
+Pin: origin mariadb.mirror.triple-it.nl
+Pin-Priority: 1000

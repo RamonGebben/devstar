@@ -1,3 +1,3 @@
 function tweb
-  sudo tail -f /opt/nginx/logs/*
+  sudo tail -f /devstar/logs/*
 end
