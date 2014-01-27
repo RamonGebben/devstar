@@ -1,4 +1,4 @@
-function new-site-phpmyadmin -d "Installs phpmyadmin as a site"
+function ds-install-phpmyadmin -d "Installs phpmyadmin as a site"
 
     site-file-structure phpmyadmin
     cd /devstar/sites/phpmyadmin
