@@ -1,4 +1,5 @@
 function goviews
-  gosite
-  cd "app/views"
+  if gosite
+    cd "app/views"
+  end
 end

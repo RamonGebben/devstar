@@ -22,9 +22,15 @@ function ds-install-phpmyadmin -d "Installs phpmyadmin as a site"
     echo "}" >> config/nginx.conf
 
     cd /devstar/sites/phpmyadmin
+    touch log/nginx.access.log
+    touch log/nginx.error.log
+
     wget --output-document pma.tar.bz2 "http://downloads.sourceforge.net/project/phpmyadmin/phpMyAdmin/4.1.6/phpMyAdmin-4.1.6-all-languages.tar.bz2?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fphpmyadmin%2F&ts=1390840654&use_mirror=freefr"
     tar -xvf pma.tar.bz2
+    rm pma.tar.bz2
+    chmod -R 775 phpMyAdmin*
     cp phpMyAdmin*/* public/. -R
+
     rweb
 
     crow success "PhpMyAdmin has been installed to /devstar/sites/phpmyadmin" as phpmyadmin.(hostname)

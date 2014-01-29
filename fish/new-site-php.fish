@@ -1,18 +1,10 @@
 function new-site-php -a name -d "Makes new PHP site"
   switch "$name"
   case ''
-    crow notice "Usage: new-php-html <name>"
+    crow notice "Usage: new-site-php <name>"
   case '*'
 
-    site-file-structure $name
-
-    crow notice "Generating files"
-
-    cp /devstar/templates/php/index.php /devstar/sites/$name/public
-    cp /devstar/templates/php/header.php /devstar/sites/$name/public/inc
-    cp /devstar/templates/css/normalize.css /devstar/sites/$name/public/css
-    cp /devstar/templates/css/style.css /devstar/sites/$name/public/css
-
+    skeletons default php 
     crow notice "Setting up initial nginx configuration"
     cd /devstar/sites/$name
 
@@ -26,6 +18,8 @@ function new-site-php -a name -d "Makes new PHP site"
     echo -s " root /devstar/sites/" $name "/public;" >> config/nginx.conf
     echo -s " access_log /devstar/sites/" $name "/log/nginx.access.log;" >> config/nginx.conf;
     echo -s " error_log /devstar/sites/" $name "/log/nginx.error.log;" >> config/nginx.conf;
+    echo -s " error_page 404 /404.html"
+    echo -s " error_page 500 501 502 503 504 /50x.html"
     echo " index index.php index.html index.htm;" >> config/nginx.conf
     echo " # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000" >> config/nginx.conf
     echo ' location ~ \.php$ {' >> config/nginx.conf

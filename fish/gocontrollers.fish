@@ -1,3 +1,5 @@
 function gocontrollers
-  cd "app/controllers"
+  if gosite 
+    cd "app/controllers"
+  end
 end

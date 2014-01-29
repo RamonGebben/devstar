@@ -1,4 +1,5 @@
 function gopublic
-  gosite
-  cd "public"
+  if gosite
+    cd "public"
+  end
 end

@@ -1,4 +1,5 @@
 function gomodels
-  gosite
-  cd "app/models"
+  if gosite
+    cd "app/models"
+  end
 end

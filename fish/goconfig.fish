@@ -1,4 +1,5 @@
 function goconfig
-  gosite
-  cd "config"
+  if gosite
+    cd "config"
+  end
 end

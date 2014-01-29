@@ -1,4 +1,5 @@
 function goapp
-  gosite
-  cd "app"
+  if gosite 
+    cd "app"
+  end
 end

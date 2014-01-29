@@ -8,6 +8,8 @@
 /flags
 /pids
 
+.comment
+
 # Compiled source #
 ###################
 *.com
