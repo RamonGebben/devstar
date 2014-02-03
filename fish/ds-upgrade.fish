@@ -9,6 +9,8 @@ function ds-upgrade -d "Brings core tools and configuration up to date"
   mkdir -p /devstar/sites
   mkdir -p /devstar/source
   mkdir -p /devstar/fishc
+  mkdir -p /devstar/skeletons
+  mkdir -p /devstar/archive
 
   crow notice "Pull most recent changes from remote git"
   git pull

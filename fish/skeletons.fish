@@ -6,7 +6,7 @@ function skeletons -a skel -d "Install skeletons to the current site"
     if gosite
        for sk in $argv
          if test -d "/devstar/skeletons/$sk"
-           cp -R "/devstar/skeletons/$sk" .
+           eval ( echo -s 'cp -R ' '/devstar/skeletons/' $sk '/*' ' .' )
          else
            crow error "Skeletons <$sk> not found"
          end
