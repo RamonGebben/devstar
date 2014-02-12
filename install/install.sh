@@ -23,7 +23,7 @@ apt-add-repository -y ppa:fish-shell/release-2   # fish
 apt-get update
 
 # install it all at once
-apt-get -y install mosh byobu fish git toilet
+apt-get -y install mosh byobu fish git toilet fail2ban
 
 # set default group
 addgroup devstar
