@@ -23,6 +23,7 @@ function ds-install-nginx -d "Install nginx webserver from source"
   crow notice "Installing rails"
   gem install rails
 
-
+  crow notice "Adding to update-rc.d"
+  update-rc.d nginx defaults
 
 end
