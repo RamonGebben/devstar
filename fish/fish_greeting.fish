@@ -2,10 +2,8 @@ function fish_greeting
   rvm use ruby-2.1.0   
   function g2 
     df -h -x tmpfs -x devtmpfs | sed "s/^/  /"
-    #cd /devstar/sites  
-    #du -sh * | sed "s/^/  /"
-    ds-help
-    ds-env
+    cd /devstar/sites  
+    du -sh * | sed "s/^/  /"
   end
   clear
   echo 
