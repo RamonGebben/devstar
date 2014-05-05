@@ -20,7 +20,10 @@ function ds-upgrade -d "Brings core tools and configuration up to date"
 
   crow notice "Update fish auto-completitions"
   fish_update_completions 
-
+  
+  crow notice "Changing write permissions /devstar*"
+  sudo chmod -R g+w /devstar
+  
   crow success "Finished ds-upgrade proccess"
 
 end

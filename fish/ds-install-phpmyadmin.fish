@@ -1,5 +1,5 @@
 function ds-install-phpmyadmin -d "Installs phpmyadmin as a site"
-   
+
     mkdir /devstar/sites/db
     mkdir /devstar/sites/db/log
     cd /devstar/sites/db
