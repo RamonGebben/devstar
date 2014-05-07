@@ -3,10 +3,10 @@ function get-routes
   cat /dev/null > /devstar/routes.md
 
   echo "# Development"  >> /devstar/routes.md
-  echo /devstar/sites/*/config/nginx.conf >> /devstar/routes.md
+  cat /devstar/sites/*/config/nginx.conf >> /devstar/routes.md
 
   echo "# Production" >> /devstar/routes.md
-  echo /devstar/production/*/config/production.conf >> /devstar/routes.md
+  cat /devstar/production/*/config/production.conf >> /devstar/routes.md
   crow notice "Updated routes.md"
 
   echo "# Development"
